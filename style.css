@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow|Major+Mono+Display');
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(lightgray, #444);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+h6, h3, h1, button {
+  font-family: 'Barlow', sans-serif;
+}
+
+h1{
+  font-size: 70px;
+  margin: 0;
+  position: relative;
+  bottom: 15px;
+}
+
+h6{
+  transition: 200ms;
+}
+
+h6, h3, h1{
+  text-align: center;
+}
+
+button{
+  background-color: rgba(0,0,0,0);
+  border: solid 3px black;
+  padding-bottom: 1px;
+  font-size: 20px;
+  width: 171px;
+  align-self: center;
+  color: black;
+  transition: 5ms background-color, color;
+}
+
+.red, .red button, .green, .green button{
+  color: white;
+}
+
+.red button, .green button {
+  color: white;
+  border-color: white;
+}
+
+button:active{
+  color: black;
+  background-color: lightgray;
+}
+
+.red{
+  background-image: linear-gradient(red, darkred);
+}
+
+.green {
+  background-image: linear-gradient(green, #030)
+}
+
+.not-visible {
+  opacity: 0;
+}
